@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../static/style_dashboard.css" />
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img class="profile-pic"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTye1vyV5PsCr3-M5u7ZK3gC8e4XR_mVF6cjYXpQVnKVFSlm5yXG42PvLG6nju8PvvzVt0&usqp=CAU"
+                  alt="User Profile Picture"
+                    onclick="window.location.href='/profile_page'"
+                    style="cursor: pointer;"
+                   />
+                <span class="username">Dheeraj</span>
+                <span class="role">Student</span>
+            </div>
+            <div class="sidebar-section stats-summary">
+                <h3>Quick Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Courses</span>
+                    <span class="stat-value">5</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completed</span>
+                    <span class="stat-value">3</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Next Quiz</span>
+                    <span class="stat-value">Tomorrow</span>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>My Progress</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 70%;"></div>
+                </div>
+                <div class="progress-text">70% Completion</div>
+            </div>
+            <div class="sidebar-section">
+                <h3>Recent Activity</h3>
+                <ol class="activity-list">
+                    <li><i class="fas fa-check-circle"></i> Completed "Intro to Biology" Quiz</li>
+                    <li><i class="fas fa-book-open"></i> Started "World History" Lesson 3</li>
+                    <li><i class="fas fa-star"></i> Earned "Problem Solver" Badge</li>
+                </ol>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="headers">
+                <h2>Dashboard</h2>
+                <nav class="options">
+                    <a href="/lessons" class="option-item">Lessons</a>
+                    <a href="/quizzes" class="option-item">Quizzes</a>
+                    <a href="/achievements" class="option-item">Achievements</a>
+                    <a href="/bookmarks" class="option-item">Bookmarks</a>
+                </nav>
+            </header>
+            <div class="content-wrapper">
+                <section class="content-section dashboard-overview">
+                    <h3>Welcome, Dheeraj! 👋</h3>
+                    <p>Your journey is well underway. See your latest progress and what's next.</p>
+                </section>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card primary">
+                        <i class="fas fa-book-open icon"></i>
+                        <h4>Active Courses</h4>
+                        <p>5</p>
+                    </div>
+                    <div class="dashboard-card secondary">
+                        <i class="fas fa-medal icon"></i>
+                        <h4>Badges Earned</h4>
+                        <p>5</p>
+                    </div>
+                    <div class="dashboard-card tertiary">
+                        <i class="fas fa-calendar-check icon"></i>
+                        <h4>Upcoming Deadlines</h4>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../static/script_dashboard.js"></script>
+</body>
+</html>
