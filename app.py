@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import json
 from bson import ObjectId
 
-client = MongoClient("mongodb+srv://dheerajkumargadhe25_db_user:MWObJ17I1yYGpjzI@cluster0.qhotxjv.mongodb.net/")
+client = MongoClient("mongoconnect")
 
 db = client['sih']
 ld = db['login_details']
@@ -157,4 +157,5 @@ def get_points():
     return JSONEncoder().encode(res)
 
 if __name__=='__main__':
+
     app.run(debug = True)
