@@ -1,0 +1,73 @@
+#lessons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.lesson-card {
+    background: #ffffff;
+    border: 1px solid #b3e5fc;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-card::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    width: 100px;
+    height: 100px;
+    background: #03a9f4;
+    border-radius: 50%;
+    opacity: 0.05;
+    transition: transform 0.5s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(3, 169, 244, 0.2);
+}
+
+.lesson-card:hover::before {
+    transform: scale(3);
+    opacity: 0.1;
+}
+
+.lesson-card h3 {
+    font-weight: 700;
+    color: #0288d1;
+    font-size: 1.4em;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.lesson-card button {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #0288d1 0%, #03a9f4 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(2, 136, 209, 0.2);
+}
+
+.lesson-card button:hover {
+    background: linear-gradient(90deg, #039be5 0%, #03a9f4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(2, 136, 209, 0.3);
+}

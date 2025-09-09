@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lessons - Student Dashboard</title>
+    <link rel="stylesheet" href="../static/style_dashboard.css"/>
+    <link rel="stylesheet" href="../static/style_lessons.css" />
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img class="profile-pic"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTye1vyV5PsCr3-M5u7ZK3gC8e4XR_mVF6cjYXpQVnKVFSlm5yXG42PvLG6nju8PvvzVt0&usqp=CAU"
+                  alt="User Profile Picture"
+                    onclick="window.location.href='/profile_page'"
+                    style="cursor: pointer;"
+                   />
+                <span class="username">Dheeraj</span>
+                <span class="role">Student</span>
+            </div>
+            <div class="sidebar-section stats-summary">
+                <h3>Quick Stats</h3>
+                <div class="stat-item"><span class="stat-label">Courses</span><span class="stat-value">5</span></div>
+                <div class="stat-item"><span class="stat-label">Completed</span><span class="stat-value">3</span></div>
+                <div class="stat-item"><span class="stat-label">Next Quiz</span><span class="stat-value">Tomorrow</span></div>
+            </div>
+            <div class="sidebar-section">
+                <h3>My Progress</h3>
+                <div class="progress-bar-container"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+                <div class="progress-text">70% Completion</div>
+            </div>
+            <div class="sidebar-section">
+                <h3>Recent Activity</h3>
+                <ul class="activity-list">
+                    <li><i class="fas fa-check-circle"></i> Completed "Intro to Biology" Quiz</li>
+                    <li><i class="fas fa-book-open"></i> Started "World History" Lesson 3</li>
+                    <li><i class="fas fa-star"></i> Earned "Problem Solver" Badge</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="headers">
+                <h2>Lessons</h2>
+                <nav class="options">
+                   <a href="/lessons" class="option-item">Lessons</a>
+                    <a href="/quizzes" class="option-item">Quizzes</a>
+                    <a href="/achievements" class="option-item">Achievements</a>
+                    <a href="/bookmarks" class="option-item">Bookmarks</a>
+                </nav>
+            </header>
+
+            <div class="content-wrapper">
+                <section id="lessons" class="content-section">
+                    <div class="lesson-card">
+                        <h3>Computer Basics</h3>
+                        <p>An introduction to fundamental concepts.</p>
+                        <button type="button"  onclick="redi()">Start Lesson</button>
+                    </div>
+                    <div class="lesson-card">
+                        <h3>World History: The Renaissance</h3>
+                        <p>Explore the cultural and artistic movement that changed Europe.</p>
+                        <button>Continue Lesson</button>
+                    </div>
+                    <div class="lesson-card">
+                        <h3>Chemistry: Stoichiometry</h3>
+                        <p>Learn how to calculate reactants and products in chemical reactions.</p>
+                        <button>Resume Lesson</button>
+                    </div>
+                    <div class="lesson-card">
+                        <h3>Biology: Cellular Respiration</h3>
+                        <p>Discover how cells convert nutrients into energy through this key process.</p>
+                        <button>Start Lesson</button>
+                    </div>
+                    <div class="lesson-card">
+                        <h3>Physics: Kinematics</h3>
+                        <p>Study the motion of objects without considering the forces causing it.</p>
+                        <button>Start Lesson</button>
+                    </div>
+                    <div class="lesson-card">
+                        <h3>Computers: Fundamentals</h3>
+                        <p>Get a strong foundation in the core components and concepts of computer science.</p>
+                        <button>Start Lesson</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../static/script_lessons.js"></script>
+</body>
+</html>

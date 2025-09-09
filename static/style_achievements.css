@@ -1,0 +1,116 @@
+#achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.achievements-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h4 {
+    font-size: 1rem;
+    color: #616161;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #0288d1;
+}
+
+/* Daily Progress Graph */
+.daily-progress-graph {
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+.daily-progress-graph h4 {
+    font-size: 1.2rem;
+    color: #424242;
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 150px;
+    gap: 10px;
+    padding: 0 10px;
+    border-bottom: 2px solid #b3e5fc;
+}
+
+.chart-bar {
+    width: 30px;
+    background: linear-gradient(to top, #03a9f4, #4fc3f7);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease;
+}
+
+.chart-bar:hover {
+    transform: scaleY(1.05);
+    opacity: 0.9;
+}
+
+.day-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #616161;
+    font-weight: 500;
+}
+
+.achievements-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.achievements-list li {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #374151;
+    border: 1px solid #e0f2f7;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.achievements-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.badge-icon {
+    font-size: 1.5em;
+    color: #ffc107;
+}

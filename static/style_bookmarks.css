@@ -1,0 +1,31 @@
+#bookmarks .bookmark-item {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 18px;
+    border: 1px solid #b3e5fc;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#bookmarks .bookmark-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#bookmarks .bookmark-item h4 {
+    font-weight: 700;
+    color: #0288d1;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+#bookmarks .bookmark-item p {
+    color: #616161;
+}
+
+.bookmark-icon {
+    font-size: 2em;
+    color: #03a9f4;
+}
